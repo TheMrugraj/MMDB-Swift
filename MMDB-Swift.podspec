@@ -26,7 +26,6 @@ Pod::Spec.new do |s|
   s.ios.public_header_files = "Sources/libmaxminddb/maxminddb*.h", "Sources/MMDB.h"
   s.osx.public_header_files = "Sources/libmaxminddb/maxminddb*.h", "Sources/MMDB.h"
 
-  s.prepare_command = "./update_database.sh"
   s.resource  = "Sources/libmaxminddb/GeoLite2-Country.mmdb"
 
   s.framework  = "Foundation"
