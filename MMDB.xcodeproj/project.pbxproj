@@ -366,7 +366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -f $SRCROOT/Sources/libmaxminddb/GeoLite2-Country.mmdb ] || [ $CONFIGURATION == \"Release\" ]; then\n  $SRCROOT/update_database.sh\nfi";
+			shellScript = "if [ ! -f $SRCROOT/Sources/libmaxminddb/GeoLite2-Country.mmdb ] || [ $CONFIGURATION == \"Release\" ]; then\n  echo \"No need of DB\"\nfi\n";
 		};
 		366F5FDE1F0515CD00DE3883 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -379,7 +379,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -f $SRCROOT/MMDB/GeoLite2-Country.mmdb ] || [ $CONFIGURATION == \"Release\" ]; then\n  $SRCROOT/update_database.sh\nfi";
+			shellScript = "if [ ! -f $SRCROOT/MMDB/GeoLite2-Country.mmdb ] || [ $CONFIGURATION == \"Release\" ]; then\n  echo \"No need of DB\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
