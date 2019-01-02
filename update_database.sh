@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 set -e
-sudo su
+
 echo "Updating GeoIP database."
 
 tmpfile=$(mktemp)
